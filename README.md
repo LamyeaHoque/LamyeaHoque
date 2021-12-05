@@ -607,7 +607,36 @@ public class BankApp {
 		////////////////////////////////////////////////////////////////
 // until one is smaller, { a[in] = a[in-1]; // shift item right, Insertion Sort 99 04 0672324539 CH03 10/10/02 9:12 AM Page 99 --in; // go left one position } a[in] = temp; // insert marked item } // end for }
 
+public class PriorityQApp {
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		PriorityQ thePQ = new PriorityQ(5);
+		thePQ.insert(30);
+		thePQ.insert(50);
+		thePQ.insert(10);
+		thePQ.insert(40);
+		thePQ.insert(20);
+		thePQ.display();
+		while( !thePQ.isEmpty() )
+		{
+		long item = thePQ.remove();
+		System.out.print("The item " +item + " is removed. ");// 10, 20, 30, 40, 50
+		System.out.println(" ");
+		thePQ.display();
+		
+		
+		} // end while
+		System.out.println(" ");
+		} // end main()
+		//-------------------------------------------------------------
+		} // end class PriorityQApp
+
+
+
+
+//HW#4
 
 
 
